@@ -1,3 +1,6 @@
+require("dotenv").config({
+  path: `.env.${process.env.NODE_ENV}`,
+})
 module.exports = {
   siteMetadata: {
     title: "My First Gatsby Site",
@@ -13,5 +16,9 @@ module.exports = {
         path: `${__dirname}/blog`
       },
     },
+    {resolve: `gatsby-source-custom`,
+  options: {
+    apiKey:process.env.API_KEY,
+  }}
   ],
 };

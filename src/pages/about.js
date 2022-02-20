@@ -14,8 +14,7 @@ class AboutPage extends React.PureComponent {
 
 
 componentDidMount() {
-  const API_KEY = API_KEY
-
+  const API_KEY = '54f94781f8c244069595b06d4e9e0885'
   fetch('http://api.football-data.org/v2/competitions/2021/matches?matchday=26', {
     method: 'get',
     headers: new Headers ({
