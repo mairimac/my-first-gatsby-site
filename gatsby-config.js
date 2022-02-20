@@ -16,9 +16,6 @@ module.exports = {
         path: `${__dirname}/blog`
       },
     },
-    {resolve: `gatsby-source-custom`,
-  options: {
-    apiKey:process.env.API_KEY,
-  }}
+    
   ],
 };
